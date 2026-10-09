@@ -10,13 +10,25 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#3B1240",
-        accent: "#D88BA0",
+        accent: "#C99DA6",
         highlight: "#C9A66B",
         background: "#EDE6F2",
         "background-alt": "#F1E9EE",
         surface: "#E8DFF0",
         text: "#231120",
         "text-muted": "#5A3D6B",
+        // Blueprint colors
+        plum: "#231120",
+        wine: "#3B1240",
+        ivory: "#F7F2EA",
+        lavender: "#EDE6F2",
+        rose: "#C99DA6",
+        gold: {
+          DEFAULT: "#C9A66B",
+          light: "#E8C98A",
+          dark: "#A88040",
+        },
+        charcoal: "#33252D",
       },
       fontFamily: {
         heading: ["var(--font-playfair)", "Georgia", "serif"],

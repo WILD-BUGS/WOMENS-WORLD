@@ -19,32 +19,36 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Women's World | Bridal Beauty & Custom Tailoring",
+  title: "Women's World | Bridal Couture & Luxury Atelier",
   description:
-    "Discover bespoke bridal couture and custom tailoring at Women's World. Where every stitch tells your story.",
+    "Indian Bridal Couture Editorial × Luxury Atelier. Handcrafted bridal lehengas, bespoke zardosi blouses, and bridal beauty styling. Where every stitch tells your story.",
   keywords: [
+    "bridal couture",
+    "bespoke atelier",
     "bridal tailoring",
-    "custom stitching",
-    "bridal wear",
-    "women fashion",
-    "bespoke couture",
-    "wedding dress",
+    "zardosi embroidery",
+    "aari needlework",
+    "bridal makeup",
+    "custom lehengas",
+    "chennai bridal fashion",
   ],
-  authors: [{ name: "Women's World" }],
-  creator: "Women's World",
+  authors: [{ name: "Women's World Atelier" }],
+  creator: "Women's World Atelier",
   openGraph: {
-    title: "Women's World | Bridal Beauty & Custom Tailoring",
+    title: "Women's World | Bridal Couture & Luxury Atelier",
     description:
-      "Discover bespoke bridal couture and custom tailoring at Women's World.",
+      "Indian Bridal Couture Editorial × Luxury Atelier. Where every stitch tells your story.",
     type: "website",
     locale: "en_IN",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#3B1240",
+  themeColor: "#231120",
   width: "device-width",
   initialScale: 1,
+  maximumScale: 5,
+  colorScheme: "only light",
 };
 
 export default function RootLayout({
@@ -56,8 +60,14 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${playfair.variable} ${inter.variable}`}
+      style={{ colorScheme: "only light" }}
     >
-      <body className="bg-background text-text font-body antialiased">
+      <head>
+        <meta name="color-scheme" content="only light" />
+        <meta name="supported-color-schemes" content="only light" />
+        <meta name="theme-color" content="#231120" />
+      </head>
+      <body className="bg-[#231120] text-ivory font-body antialiased overflow-x-hidden selection:bg-gold/30 selection:text-wine" style={{ colorScheme: "only light" }}>
         <Navbar />
         {children}
       </body>

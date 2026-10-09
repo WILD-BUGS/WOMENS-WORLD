@@ -1,0 +1,6 @@
+{
+  "name": "Women's World",
+  "description": "Indian Bridal Couture Editorial × Luxury Atelier. Handcrafted bridal lehengas, bespoke zardosi blouses, and bridal beauty styling in Chennai, Tamil Nadu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
